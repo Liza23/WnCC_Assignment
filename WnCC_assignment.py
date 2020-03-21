@@ -3,11 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-
 URL="https://gadgets.ndtv.com/news"	 #url of the website used for we scrapping
 r=requests.get(URL)
 #web scrapping is checked to be legalised on this website
-
 
 soup=BeautifulSoup(r.content,'html5lib')
 # We create a BeautifulSoup object by passing two arguments
